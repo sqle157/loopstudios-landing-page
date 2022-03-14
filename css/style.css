@@ -76,7 +76,7 @@ body {
 .container {
 	max-width: min(1120px, 90%);
 	margin: 0 auto;
-	padding: 64px 10px;
+	padding: 64px 0;
 }
 
 .flex-container {
@@ -91,7 +91,8 @@ body {
 .header {
 	width: 100%;
 	height: 650px;
-	background: url("../images/desktop/image-hero.jpg") no-repeat center center/cover;
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+		url("../images/desktop/image-hero.jpg") no-repeat center center/cover;
 }
 
 .hamburger-icon,
@@ -146,11 +147,18 @@ body {
 }
 
 /* Main Section */
+.main {
+	margin-block: 10rem;
+}
+
+.main .container {
+	padding: 0;
+}
+
 .main__content {
 	width: 100%;
 	display: flex;
 	position: relative;
-	margin-bottom: 12rem;
 }
 
 .main__content .main__content__intro {
@@ -295,11 +303,16 @@ body {
 
 /* Media */
 @media (max-width: 1024px) {
+	h3 {
+		font-size: var(--fs-24);
+		line-height: 1;
+	}
+
 	/* Main */
 	.main__content {
 		flex-direction: column;
 		align-items: center;
-		margin-bottom: 5rem;
+		margin-bottom: 10rem;
 	}
 
 	.main__content .main__content__intro {
@@ -310,6 +323,7 @@ body {
 		margin-top: 3rem;
 	}
 }
+
 /* Tablet & Mobile */
 @media only screen and (max-width: 768px) {
 	h1 {
@@ -320,11 +334,6 @@ body {
 
 	h2 {
 		font-size: var(--fs-32);
-		line-height: 1;
-	}
-
-	h3 {
-		font-size: var(--fs-24);
 		line-height: 1;
 	}
 
@@ -345,10 +354,17 @@ body {
 
 	.hero__heading {
 		padding: 3rem 1rem;
-		margin-inline: auto;
 	}
 
 	/* Main */
+	.main {
+		margin-block: 5rem;
+	}
+
+	.main__content {
+		margin-bottom: 5rem;
+	}
+
 	.main__gallery {
 		grid-template-areas:
 			"heading"
