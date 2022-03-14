@@ -244,10 +244,12 @@ body {
 	z-index: 10;
 }
 
+.grid__item:active picture,
 .grid__item:hover picture {
 	filter: opacity(0.3);
 }
 
+.grid__item:active picture,
 .grid__item:hover h3 {
 	color: rgba(0, 0, 0, 1);
 }
