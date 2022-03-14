@@ -1,6 +1,9 @@
 const hamburgerIcon = document.querySelector(".hamburger-icon");
 const closeIcon = document.querySelector(".close-icon");
 
+// Enable hover effect on mobile
+document.addEventListener("touchstart", function () {}, true);
+
 // Open hamburger menu listener
 hamburgerIcon.addEventListener("click", () => {
 	document.querySelector(".navbar__mobile").style.display = "flex";
