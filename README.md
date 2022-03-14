@@ -1,4 +1,4 @@
-![Design preview for the Loopstudios landing page coding challenge](./design/desktop-preview.jpg)
+![Design preview for the Loopstudios landing page coding challenge](./desktop-preview.jpg)
 
 ## Welcome! 👋
 
