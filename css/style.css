@@ -273,7 +273,7 @@ body {
 }
 
 /* Media with hover */
-@media (hover: hover) and ((pointer: fine) or (pointer: coarse)) {
+@media (hover: hover) {
 	a:hover::before {
 		content: "";
 		position: absolute;
