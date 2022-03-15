@@ -86,6 +86,7 @@ body {
 .hamburger-icon,
 .close-icon {
 	display: none;
+	cursor: pointer;
 }
 
 .navbar {
@@ -272,8 +273,8 @@ body {
 	text-align: end;
 }
 
-/* Media with hover */
-@media (hover: hover) {
+/* Media hover */
+@media (hover) {
 	a:hover::before {
 		content: "";
 		position: absolute;
@@ -286,18 +287,18 @@ body {
 		border-bottom: 1px solid #fff;
 	}
 
+	.main__gallery button:hover {
+		background-color: #000;
+		color: #fff;
+		opacity: 1;
+	}
+
 	.grid__item:hover picture {
 		filter: opacity(0.3);
 	}
 
 	.grid__item:hover h3 {
 		color: rgba(0, 0, 0, 1);
-	}
-
-	.main__gallery button:hover {
-		background-color: #000;
-		color: #fff;
-		opacity: 1;
 	}
 
 	.footer__social a:hover::before {
